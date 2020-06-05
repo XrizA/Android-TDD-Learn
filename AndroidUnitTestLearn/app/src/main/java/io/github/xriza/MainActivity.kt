@@ -18,15 +18,7 @@ class MainActivity : AppCompatActivity() {
 
             val isLoginIdOK = RegisterVerity().isLoginIdVerify(loginId)
 
-            var isPwdOK = false
-
-            if (pwd.length >= 8) {
-                if (pwd.toUpperCase().first() in 'A'..'Z') {
-                    if (pwd.findAnyOf((0..9).map { it.toString() }) != null) {
-                        isPwdOK = true
-                    }
-                }
-            }
+            val isPwdOK = RegisterVerity().isPasswordVerify(pwd)
 
             val builder = AlertDialog.Builder(this)
 

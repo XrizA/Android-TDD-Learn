@@ -12,13 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginId"
-        android:hint="帳號(至少6碼，第1碼為英文"/>
+        android:autofillHints="帳號(至少6碼，第1碼為英文"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/password"
-        android:hint="密碼(至少8碼，第1碼為英文，並包含1碼數字)"/>
+        android:autofillHints="密碼(至少8碼，第1碼為英文，並包含1碼數字)" />
 
     <Button
         android:layout_width="match_parent"

@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 29
+    testOptions.unitTests.includeAndroidResources = true
     buildToolsVersion "29.0.3"
 
     defaultConfig {
@@ -36,4 +37,10 @@ dependencies {
 
     testImplementation 'org.mockito:mockito-core:2.21.0'
     testImplementation 'org.mockito:mockito-inline:2.21.0'
+
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    testImplementation 'org.robolectric:robolectric:4.3.1'
 }
