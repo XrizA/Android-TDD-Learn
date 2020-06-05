@@ -7,3 +7,10 @@
 
 ## Local unit tests
 >### app > src > test > java > io > github > xriza
+
+## build.gradle(Module: app) add a Mockito
+>### `dependencies {`
+>### ...
+>### `testImplementation 'org.mockito:mockito-core:2.8.9'`
+>### `testImplementation 'org.>mockito:mockito-inline:2.21.0'`
+>`}`

@@ -2,9 +2,8 @@ package io.github.xriza
 
 import android.content.Context
 
-class Repository(val context: Context) {
+class Repository(val sharedPreferenceManager: ISharedPreferenceManager) {
     fun saveUserId(id: String) {
-        val sharedPreference = context.getSharedPreferences("USER_DATA", Context.MODE_PRIVATE)
-        sharedPreference.edit().putString("USER_ID", id).commit()
+        sharedPreferenceManager.saveString("USER_ID", id)
     }
 }
