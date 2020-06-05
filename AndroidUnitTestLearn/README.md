@@ -15,13 +15,12 @@
 >### `androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'`
 >`}`
 
-## build.gradle(Module: app) use a Robolectric and add a Robolectric
+## build.gradle(Module: app) add a Robolectric
 ## Robolectic[4.3.1 support SDK 29]
 >### `dependencies {`
 >### ...
 >### `testImplementation 'org.robolectric:robolectric:4.3.1'`
 >`}`
-
 
 ## Production code
 >### app > src > main > java > io > github > xriza
