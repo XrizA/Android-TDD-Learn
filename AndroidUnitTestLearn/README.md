@@ -2,7 +2,7 @@
 ## Production code
 >### app > src > main > java > io > github > xriza
 
-## Instrumented tests、UI tests
+## Instrumented tests、UI tests (Required:Android:5.0 and API >= 21)
 >### app > src > androidTest > java > io > github > xriza
 
 ## Local unit tests
