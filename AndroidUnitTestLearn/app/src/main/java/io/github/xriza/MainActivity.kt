@@ -28,23 +28,22 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            if (!isLoginIdOK) {
-                val builder = AlertDialog.Builder(this)
+            val builder = AlertDialog.Builder(this)
 
+            if (!isLoginIdOK) {
                 builder.setMessage("帳號至少要6碼，第1碼為英文")
                     .setTitle("錯誤")
 
                 builder.show()
             }
             else if (!isPwdOK) {
-                val builder = AlertDialog.Builder(this)
-
                 builder.setMessage("密碼至少要8碼，第1碼為英文，並包含1碼數字")
                     .setTitle("錯誤")
 
                 builder.show()
             } else {
-                Repository(this).saveUserId(loginId)
+                val sharedPreferenceManager = SharedPreferenceManager(this)
+                Repository(sharedPreferenceManager).saveUserId(loginId)
 
                 val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra("ID", loginId)
