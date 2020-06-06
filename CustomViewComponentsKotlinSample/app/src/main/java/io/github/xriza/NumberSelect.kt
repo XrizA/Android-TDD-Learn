@@ -13,9 +13,6 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 
-/**
- * TODO: document your custom view class.
- */
 class NumberSelect : LinearLayout {
 
     private lateinit var addButton: Button
